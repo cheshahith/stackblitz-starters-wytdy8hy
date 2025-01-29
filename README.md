@@ -35,7 +35,7 @@ require('dotenv').config();
 ### **3. Define the Environment Variables**
 Create a `.env` file in your project directory and define your variables:
 ```plaintext
-IS_ADMIN=true
+
 ```
 
 You can modify the value to `true` or `false` depending on your requirements.
@@ -46,7 +46,6 @@ You can modify the value to `true` or `false` depending on your requirements.
 Use `process.env` to access your variables anywhere in your application. Here's an example:
 ```javascript
 const isAdmin = process.env.IS_ADMIN === 'true';
-
 if (isAdmin) {
   console.log("Admin privileges granted.");
 } else {
